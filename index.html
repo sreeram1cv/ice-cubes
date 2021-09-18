@@ -42,15 +42,15 @@ function load() {
 	}, 2000);
 	var max_w = window.innerWidth;
 	var max_h = window.innerHeight;
-	var h_w_aspect = 8/6;
+	var h_w_aspect = 6/6;
 
 	var images = document.getElementsByTagName("img");
 	var total_photos = images.length; // 389;
 
-	var start_width = 20;
+	var start_width = max_w*0.095895;
 
 	var last_w = start_width;
-	for(var w = start_width; w < 150; w++) {
+	for(var w = start_width; w < max_w; w++) {
 		var h = w * h_w_aspect;
 
 		var cols = Math.floor(max_w / w);
